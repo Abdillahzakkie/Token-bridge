@@ -1,17 +1,25 @@
 {
-  "name": "smart-contract",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "dependencies": {
-    "@nomiclabs/hardhat-ethers": "^2.0.3",
-    "@nomiclabs/hardhat-etherscan": "^2.1.8",
-    "@nomiclabs/hardhat-waffle": "^2.0.1",
-    "chai": "^4.3.4",
-    "dotenv": "^10.0.0",
-    "ethereum-waffle": "^3.4.0",
-    "ethers": "^5.5.2",
-    "hardhat": "^2.8.0",
-    "hardhat-gas-reporter": "^1.0.6"
-  }
+	"name": "smart-contract",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"scripts": {
+		"compile": "hardhat compile",
+		"test": "hardhat test"
+	},
+	"dependencies": {
+		"@nomiclabs/hardhat-ethers": "^2.0.3",
+		"@nomiclabs/hardhat-etherscan": "^2.1.8",
+		"@nomiclabs/hardhat-waffle": "^2.0.1",
+		"@openzeppelin/contracts-upgradeable": "^4.4.1",
+		"chai": "^4.3.4",
+		"dotenv": "^10.0.0",
+		"ethereum-waffle": "^3.4.0",
+		"ethers": "^5.5.2",
+		"hardhat": "^2.8.0",
+		"hardhat-gas-reporter": "^1.0.6"
+	},
+	"devDependencies": {
+		"@openzeppelin/hardhat-upgrades": "^1.12.0"
+	}
 }
